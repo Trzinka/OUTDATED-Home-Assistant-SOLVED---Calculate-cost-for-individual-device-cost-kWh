@@ -91,7 +91,7 @@ and this:
 
 ![Fiksna cena elektrike mesečno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/d3f005d9-8024-43c8-a911-4e01972344bf)
 
-### Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price", and we can continue to the next point.
+***Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price", and we can continue to the next point.***
 
 
 
@@ -135,7 +135,7 @@ Change to the desired icon:
 The end result should be something like this:
 ![#8a-Utility](https://github.com/Trzinka/HA-energy-cost/assets/40424965/53fbc0ec-0257-4d9c-afce-c5eede1d0dd0)
 
-### Now we have the sensor we created for each entity we wanted to create the accumulation entity in kWh, and we can continue to the next point.
+***Now we have the sensor we created for each entity we wanted to create the accumulation entity in kWh, and we can continue to the next point.***
 
 
 
@@ -167,7 +167,12 @@ The end result should be something like this:
 
 
 and for the device
+
 ![Me-Bo](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/8525e494-0b1d-4794-846b-bf4318cd15d7)
+
+***Now we have the sensor we created for each entity we wanted to create the accumulation entity for day, week, month in kWh, and we can continue to the next point.***
+
+
 
 
 ## 5.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
