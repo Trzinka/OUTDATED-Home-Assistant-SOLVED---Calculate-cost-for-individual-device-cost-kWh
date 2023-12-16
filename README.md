@@ -223,4 +223,9 @@ The end result should be something like this:
 
 
 
-# 7.) look for more (https://www.youtube.com/results?search_query=homeassistant+calculating+electricity+price) and much more (https://www.google.com/search?sca_esv=591524815&sxsrf=AM9HkKmIuV66qLgKD2uXqiGiF19H7qV4_w:1702746085001&q=home+assistant+calculating+electricity+price&spell=1&sa=X&ved=2ahUKEwjN2ae8t5SDAxWYSfEDHUV6BpwQBSgAegQICBAC&biw=1366&bih=645&dpr=1)
+# 7.) look for more (https://www.youtube.com/results?search_query=homeassistant+calculating+electricity+price) 
+
+and much more 
+
+
+(https://www.google.com/search?sca_esv=591524815&sxsrf=AM9HkKmIuV66qLgKD2uXqiGiF19H7qV4_w:1702746085001&q=home+assistant+calculating+electricity+price&spell=1&sa=X&ved=2ahUKEwjN2ae8t5SDAxWYSfEDHUV6BpwQBSgAegQICBAC&biw=1366&bih=645&dpr=1)
