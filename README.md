@@ -41,8 +41,6 @@ and
         
 to match your costs.
          
-If you don't know what I'm writing about, take a look: `https://youtu.be/kgFwhYInzfA`, or something similar.
-
 ```
 #================================================
 # Electricity billing
@@ -61,6 +59,9 @@ If you don't know what I'm writing about, take a look: `https://youtu.be/kgFwhYI
          unit_of_measurement: EUR
          unique_id: d462bb14-36d7-4d2c-bb04-5cf5f1767b52
 ```
+
+If you don't know what I'm writing about, take a look: `https://youtu.be/kgFwhYInzfA`, or something similar.
+
 After the system restarts, you should see something like this:
 
 ![Cena elektrike €-kWh](https://github.com/Trzinka/HA-energy-cost/assets/40424965/0a3b797a-dc8c-41b7-9187-a2549443e9a9)
@@ -69,7 +70,7 @@ and this:
 
 ![Fiksna cena elektrike mesečno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/d3f005d9-8024-43c8-a911-4e01972344bf)
 
-Now we have the sensor we created created "Electricity price €/kWh" and "Fixed monthly electricity price" and we can continue to the next point.
+Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price" and we can continue to the next point.
 
 3.) Then create a day, week, month (if you want you can also do for hourly) utility sensor from the accumulation sensor.
 ************************************************************************************************************************
