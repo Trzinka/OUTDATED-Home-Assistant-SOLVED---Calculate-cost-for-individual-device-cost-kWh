@@ -75,7 +75,7 @@ and this:
 
 ![Fiksna cena elektrike mesečno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/d3f005d9-8024-43c8-a911-4e01972344bf)
 
-Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price" and we can continue to the next point.
+### Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price" and we can continue to the next point.
 
 
 
