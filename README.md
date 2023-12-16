@@ -28,7 +28,18 @@ For my household/background information:
 
 ![W](https://github.com/Trzinka/HA-energy-cost/assets/40424965/62cc59d7-dc65-4c9e-97ea-74899f5a97eb)
 
-`
+Enter the following code in the sensors.yaml file by changing the amount 
+
+    ```"Electricity price €/kWh"
+value_template:``` 
+         and 
+    ```"Fixed monthly electricity price"
+         value_template:``` 
+to match your costs.
+         
+If you don't know what I'm writing about, take a look: `https://youtu.be/kgFwhYInzfA`, or something similar.
+
+```
 #================================================
 # Electricity billing
 #================================================ 
@@ -44,7 +55,8 @@ For my household/background information:
          friendly_name_template: "Fixed monthly electricity price"
          value_template: "16.3113" # (Accounting power, Contribution for CHP and RES, Flat cost of business and minus E-discount)
          unit_of_measurement: EUR
-         unique_id: d462bb14-36d7-4d2c-bb04-5cf5f1767b52`
+         unique_id: d462bb14-36d7-4d2c-bb04-5cf5f1767b52
+```
 
 3.) Then create a hourly utility sensor from the accumulation sensor. 
 
