@@ -7,6 +7,8 @@ This ended up to be (one, not the only) the working solution for me:
 My goal is to have a sensor that shows the total cost according to the use of the device and the corresponding daily, weekly and monthly price of electricity consumption.`
 
 For my household/background information:
+
+
 1.) First, name the device in a way that is understandable to you!
 ******************************************************************
     
@@ -22,6 +24,8 @@ For my household/background information:
 ![#2-Shelly-Spremenjeno2](https://github.com/Trzinka/HA-energy-cost/assets/40424965/1723de46-02ea-4576-b17d-373db79c9d0a)
 ![#2-Tuya-Spremenjeno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/fdfd9944-d17c-4df6-8e96-3c2b0c25bf53)
 ![#2-Zigbee-Spremenjeno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/eab1daab-32f2-4467-8e07-b739a065c060)
+
+
 
 2.) Create one sensor that accumulates the wattage over time. 
 *************************************************************
@@ -73,6 +77,8 @@ and this:
 
 Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price" and we can continue to the next point.
 
+
+
 3.) Then create a day, week, month (if you want you can also do for hourly) utility sensor from the accumulation sensor.
 ************************************************************************************************************************
 You will need Integration - Riemann sum integral for the next step. 
@@ -112,6 +118,8 @@ Change to the desired icon:
 
 The end result should be something like this:
 ![#8a-Utility](https://github.com/Trzinka/HA-energy-cost/assets/40424965/53fbc0ec-0257-4d9c-afce-c5eede1d0dd0)
+
+
 
 
 4.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
