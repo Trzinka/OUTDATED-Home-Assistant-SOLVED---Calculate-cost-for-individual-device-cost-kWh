@@ -1,5 +1,13 @@
 # Home Assistant-SOLVED - Calculate cost for individual device cost/kWh
 `How to make sensors in Home Assistant to display consumption in kWh (day, week, month) and calculate the financial cost per device?`
+***To get a similar look:***
+
+![Obračun tm](https://github.com/Trzinka/HA-energy-cost/assets/40424965/458193b2-054f-4c52-968c-26571ddf027b)
+
+***ore this:***
+
+![Obračun me](https://github.com/Trzinka/HA-energy-cost/assets/40424965/aaaf2c9f-585c-4916-a2b9-45714ef76c14)
+
 
 This ended up to be (one, not the only) the working solution for me:
 
