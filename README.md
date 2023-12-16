@@ -30,11 +30,13 @@ For my household/background information:
 
 Enter the following code in the sensors.yaml file by changing the amount 
 
-    ```"Electricity price €/kWh"
-value_template:``` 
-         and 
-    ```"Fixed monthly electricity price"
-         value_template:``` 
+    "Electricity price €/kWh"
+    value_template: 
+and 
+    
+    "Fixed monthly electricity price"
+    value_template:
+        
 to match your costs.
          
 If you don't know what I'm writing about, take a look: `https://youtu.be/kgFwhYInzfA`, or something similar.
