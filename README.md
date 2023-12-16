@@ -163,6 +163,7 @@ select the previously made sensor accumulation entity in kWh, and select the tim
 ![#8c-Utility](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/65cef096-1e1c-4446-a613-227773350d44)
 
 The end result should be something like this:
+
 ![Meritve](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/e1c2e8da-4e0d-45d7-bc2c-ce34aebb7023)
 
 
