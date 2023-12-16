@@ -39,8 +39,8 @@ For my household/background information:
 
 
 
-## 2.) Create one sensor that accumulates the wattage over time. 
-*************************************************************
+## 2.) Create one sensor that will determine the price/kWh and the monthly fixed cost of the connection. 
+********************************************************************************************************
 
 `The entity/sensor to use is in W` `Be careful`, because some manufacturers also show how much the device consumes without a consumer. `Choose the right entity in W˛`
 
@@ -96,8 +96,8 @@ and this:
 
 
 
-## 3.) Then create a day, week, month (if you want you can also do for hourly) utility sensor from the accumulation sensor.
-************************************************************************************************************************
+## 3.) Then, from the device entity in W, create the accumulation entity in kWh, from which we will later obtain the desired data.
+**********************************************************************************************************************************
 You will need Integration - Riemann sum integral for the next step. 
 
 If you don't have it installed, see: (https://www.home-assistant.io/integrations/integration/)
@@ -138,9 +138,10 @@ The end result should be something like this:
 ### Now we have the sensor we created for each entity we wanted and we can continue to the next point.
 
 
+## 4.) Then create a day, week, month (if you want you can also do for hourly) utility sensor from the accumulation sensor.
+************************************************************************************************************************
 
-
-## 4.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
+## 5.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
 **************************************************************************************************
 
 
