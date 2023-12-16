@@ -213,6 +213,8 @@ Enter the following code in the sensors.yaml file:
 
 For "unique_id:" use (https://www.guidgenerator.com/online-guid-generator.aspx) to generate it. It can generate multiple numbers at once!
 
+The end result should be something like this:
+![Me-Bo EUR](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/b7ab29db-eeae-4532-b64c-8cb2f8c32951)
 
 
 ## 6.) Now you can make a Lovelace card.
