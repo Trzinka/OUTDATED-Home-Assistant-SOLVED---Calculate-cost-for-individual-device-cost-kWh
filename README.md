@@ -40,6 +40,7 @@ and
     value_template:
         
 to match your costs.
+
 WRITE THIS TWO SENSORS:         
 ```
 #================================================
