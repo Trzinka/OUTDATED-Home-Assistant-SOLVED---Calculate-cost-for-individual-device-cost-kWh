@@ -54,7 +54,7 @@ and
         
 to match your costs.
 
-### WRITE THIS TWO SENSORS:         
+***WRITE THIS TWO SENSORS:***         
 ```
 #================================================
 # Electricity billing
