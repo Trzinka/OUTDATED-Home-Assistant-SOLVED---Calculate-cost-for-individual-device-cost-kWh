@@ -28,6 +28,23 @@ For my household/background information:
 
 ![W](https://github.com/Trzinka/HA-energy-cost/assets/40424965/62cc59d7-dc65-4c9e-97ea-74899f5a97eb)
 
+`
+#================================================
+# Electricity billing
+#================================================ 
+   - platform: template
+     sensors:
+       electricity_kwh_unit_price:
+         friendly_name_template: "Electricity price €/kWh"
+         value_template: "0.27808" # (Electricity ET, Network charge ET, Contribution for the operation of the market operator, Contribution for energy efficiency and Excise duty)
+         unit_of_measurement: EUR/kWh
+         unique_id: 9b434ad5-7c23-4d49-8ffa-a30c17e2084a
+
+       electricity_standing_charge_price:
+         friendly_name_template: "Fixed monthly electricity price"
+         value_template: "16.3113" # (Accounting power, Contribution for CHP and RES, Flat cost of business and minus E-discount)
+         unit_of_measurement: EUR
+         unique_id: d462bb14-36d7-4d2c-bb04-5cf5f1767b52`
 
 3.) Then create a hourly utility sensor from the accumulation sensor. 
 
