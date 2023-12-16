@@ -9,7 +9,7 @@ My goal is to have a sensor that shows the total cost according to the use of th
 For my household/background information:
 
 
-1.) First, name the device in a way that is understandable to you!
+## 1.) First, name the device in a way that is understandable to you!
 ******************************************************************
     
     My example (Slovenian language)
@@ -27,7 +27,7 @@ For my household/background information:
 
 
 
-2.) Create one sensor that accumulates the wattage over time. 
+## 2.) Create one sensor that accumulates the wattage over time. 
 *************************************************************
 
 `The entity/sensor to use is in W` `Be careful`, because some manufacturers also show how much the device consumes without a consumer. `Choose the right entity in W˛`
@@ -79,7 +79,7 @@ Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly
 
 
 
-3.) Then create a day, week, month (if you want you can also do for hourly) utility sensor from the accumulation sensor.
+## 3.) Then create a day, week, month (if you want you can also do for hourly) utility sensor from the accumulation sensor.
 ************************************************************************************************************************
 You will need Integration - Riemann sum integral for the next step. 
 
@@ -122,7 +122,8 @@ The end result should be something like this:
 
 
 
-4.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
+## 4.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
+**************************************************************************************************
 
 
 
