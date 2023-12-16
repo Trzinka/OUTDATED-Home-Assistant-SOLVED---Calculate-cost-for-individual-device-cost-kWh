@@ -39,14 +39,14 @@ For my household/background information:
 
 
 
-## 2.) Create one sensor that will determine the price/kWh and the monthly fixed cost of the connection. 
-********************************************************************************************************
+## 2.) Create one sensor that will determine the price/kWh of electricity and the monthly fixed cost of the electrical grid connection. 
+***************************************************************************************************************************************
 
 `The entity/sensor to use is in W` `Be careful`, because some manufacturers also show how much the device consumes without a consumer. `Choose the right entity in W˛`
 
 ![W](https://github.com/Trzinka/HA-energy-cost/assets/40424965/62cc59d7-dc65-4c9e-97ea-74899f5a97eb)
 
-Enter the following code in the sensors.yaml file by changing the amount 
+Enter the following code in the sensors.yaml file by changing the amount:
 
     "Electricity price €/kWh"
     value_template: 
@@ -91,12 +91,12 @@ and this:
 
 ![Fiksna cena elektrike mesečno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/d3f005d9-8024-43c8-a911-4e01972344bf)
 
-### Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price" and we can continue to the next point.
+### Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price", and we can continue to the next point.
 
 
 
 
-## 3.) Then, from the device entity in W, create the accumulation entity in kWh, from which we will later obtain the desired data.
+## 3.) Then, from the device entity in W, create the , from which we will later obtain the desired data.
 **********************************************************************************************************************************
 You will need Integration - Riemann sum integral for the next step. 
 
@@ -135,11 +135,40 @@ Change to the desired icon:
 The end result should be something like this:
 ![#8a-Utility](https://github.com/Trzinka/HA-energy-cost/assets/40424965/53fbc0ec-0257-4d9c-afce-c5eede1d0dd0)
 
-### Now we have the sensor we created for each entity we wanted and we can continue to the next point.
+### Now we have the sensor we created for each entity we wanted to create the accumulation entity in kWh, and we can continue to the next point.
+
+
 
 
 ## 4.) Then create a day, week, month (if you want you can also do for hourly) utility sensor from the accumulation sensor.
 ************************************************************************************************************************
+You will need Utility Meter integral for the next step. 
+
+If you don't have it installed, see: (https://www.home-assistant.io/integrations/utility_meter/)
+
+Simply click on the `add integration to' button. Follow the instructions. Restart the system if necessary!
+
+`Go and click on settings, then on devices & services and then on helpers`. Click on:
+
+![#3-Helper](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/2646d48b-9ab4-407a-b09f-7baed256ddcc)
+
+then choose:
+
+![#8b-Utility](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/a88430f5-b2f8-498f-a514-2e5db2e0e991)
+
+select the previously made sensor accumulation entity in kWh, and select the time period (day, week, month) repeat each time separately.
+
+![#8c1-Utility](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/014a5cca-08dd-47e3-a435-7010c0b664ac)
+![#8c2-Utility](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/4103c2a7-ab21-4913-b950-6204e405ed95)
+![#8c-Utility](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/65cef096-1e1c-4446-a613-227773350d44)
+
+The end result should be something like this:
+![Meritve](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/e1c2e8da-4e0d-45d7-bc2c-ce34aebb7023)
+
+
+and for the device
+![Me-Bo](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/8525e494-0b1d-4794-846b-bf4318cd15d7)
+
 
 ## 5.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
 **************************************************************************************************
