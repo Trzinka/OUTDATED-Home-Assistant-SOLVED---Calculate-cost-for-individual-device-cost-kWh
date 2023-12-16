@@ -104,7 +104,7 @@ If you don't have it installed, see: (https://www.home-assistant.io/integrations
 
 Simply click on the `add integration to' button. Follow the instructions. Restart the system if necessary!
 
-Go and click on settings, then on devices & services and then on helpers. Click on:
+`Go and click on settings, then on devices & services and then on helpers`. Click on:
 ![#3-Helper](https://github.com/Trzinka/HA-energy-cost/assets/40424965/b49d8e0e-56ad-47ca-b0ba-84757787ee8c)
 
 then choose:
