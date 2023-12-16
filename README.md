@@ -175,8 +175,47 @@ and for the device
 
 
 
-## 5.) Then multiply the price/hour-sensor with the utility sensor in the configuration-yaml file.
-**************************************************************************************************
+## 5.) Then multiply the price/kwh-sensor with the utility sensor in the sensors.yaml file.
+*******************************************************************************************
+Enter the following code in the sensors.yaml file:
 
+***WRITE THIS THREE SENSORS:***         
+```
+#================================================ ================================================= ================================================= ====
+# Electricity billing by consumer
+#================================================ ================================================= ================================================= ====
+#1                                                                 Shelly
+   - platform: template
+     sensors:
+       consumption_me_will_be_daily:
+         friendly_name_template: "Daily boiler consumption"
+         unit_of_measurement: "€"
+         value_template: "{{ (states('sensor.me_bo_poraba_kwh_dnevno') | round (2)) * (states('sensor.electricity_kwh_unit_price') | round (2))}}"
+         icon_template: mdi:currency-eur
+         unique_id: ?
+   - platform: template
+     sensors:
+       spending_me_will_be_weekly:
+         friendly_name_template: "Weekly boiler consumption"
+         unit_of_measurement: "€"
+         value_template: "{{ (states('sensor.me_bo_poraba_kwh_tendensko') | round (2)) * (states('sensor.electricity_kwh_unit_price') | round (2))}}"
+         icon_template: mdi:currency-eur
+         unique_id: ?
+   - platform: template
+     sensors:
+       spending_me_will_be_monthly:
+         friendly_name_template: "Monthly boiler consumption"
+         unit_of_measurement: "€"
+         value_template: "{{ (states('sensor.me_bo_poraba_kwh_mesecno') | round (2)) * (states('sensor.electricity_kwh_unit_price') | round (2))}}"
+         icon_template: mdi:currency-eur
+         unique_id: ?
+```
+
+For "unique_id:" use (https://www.guidgenerator.com/online-guid-generator.aspx) to generate it. It can generate multiple numbers at once!
+
+
+
+## 6.) Now you can make a Lovelace card.
+****************************************
 
 
