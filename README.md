@@ -18,6 +18,8 @@ My goal is to have a sensor that shows the total cost according to the use of th
 For my household/background information:
 
 
+
+
 ## 1.) First, name the device in a way that is understandable to you!
 ******************************************************************
     
@@ -33,6 +35,7 @@ For my household/background information:
 ![#2-Shelly-Spremenjeno2](https://github.com/Trzinka/HA-energy-cost/assets/40424965/1723de46-02ea-4576-b17d-373db79c9d0a)
 ![#2-Tuya-Spremenjeno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/fdfd9944-d17c-4df6-8e96-3c2b0c25bf53)
 ![#2-Zigbee-Spremenjeno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/eab1daab-32f2-4467-8e07-b739a065c060)
+
 
 
 
@@ -75,7 +78,7 @@ to match your costs.
 ```
 
 
-For "unique_id:" use (https://www.guidgenerator.com/online-guid-generator.aspx) to generate.
+For "unique_id:" use (https://www.guidgenerator.com/online-guid-generator.aspx) to generate it.
 
 
 If you don't know what I'm writing about, take a look: `https://youtu.be/kgFwhYInzfA`, or something similar.
@@ -89,6 +92,7 @@ and this:
 ![Fiksna cena elektrike mesečno](https://github.com/Trzinka/HA-energy-cost/assets/40424965/d3f005d9-8024-43c8-a911-4e01972344bf)
 
 ### Now we have the sensor we created "Electricity price €/kWh" and "Fixed monthly electricity price" and we can continue to the next point.
+
 
 
 
@@ -108,7 +112,6 @@ then choose:
 ![#4-Integration](https://github.com/Trzinka/HA-energy-cost/assets/40424965/42f7e143-a04b-4deb-807a-8966f469216f)
 
 and then select the desired entity in W:
-
 
 ![#5-Select](https://github.com/Trzinka/HA-energy-cost/assets/40424965/58edb5a3-cc30-48fb-98de-d3ab3a72d9e6)
 
@@ -131,6 +134,8 @@ Change to the desired icon:
 
 The end result should be something like this:
 ![#8a-Utility](https://github.com/Trzinka/HA-energy-cost/assets/40424965/53fbc0ec-0257-4d9c-afce-c5eede1d0dd0)
+
+### Now we have the sensor we created for each entity we wanted and we can continue to the next point.
 
 
 
