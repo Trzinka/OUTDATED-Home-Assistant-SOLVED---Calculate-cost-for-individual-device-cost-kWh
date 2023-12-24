@@ -222,9 +222,10 @@ The end result should be something like this:
 ****************************************
 
 
-#Please click on the star at the top right if you like the git!
+# Please click on the star at the top right if you like the git!
 
-# 7.) look for more (https://www.youtube.com/results?search_query=homeassistant+calculating+electricity+price) 
+
+## 7.) look for more (https://www.youtube.com/results?search_query=homeassistant+calculating+electricity+price) 
 
 and much more 
 
