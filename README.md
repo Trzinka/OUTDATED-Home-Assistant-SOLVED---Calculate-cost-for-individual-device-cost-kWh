@@ -3,11 +3,12 @@
 
 ***To get a similar look:***
 
-![Obračun tm](https://github.com/Trzinka/HA-energy-cost/assets/40424965/458193b2-054f-4c52-968c-26571ddf027b)
+![Poraba gretja](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/8e0bdc44-64af-4960-ae18-271dd86bd83a)
+
 
 ***ore this:***
 
-![Obračun me](https://github.com/Trzinka/HA-energy-cost/assets/40424965/aaaf2c9f-585c-4916-a2b9-45714ef76c14)
+![Poraba ostalo](https://github.com/Trzinka/Home-Assistant-SOLVED---Calculate-cost-for-individual-device-cost-kWh/assets/40424965/a45ad1da-c2d5-45d3-8394-e8d81c4e1e21)
 
 
 This ended up to be (one, not the only) the working solution for me:
